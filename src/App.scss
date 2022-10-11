@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 75vh;
+
+  .sliders{
+    border: 5px solid #49a6e9;
+    width: 80vw;
+    margin: 0 auto;
+    height: 70vh;
+    max-width: 80rem;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 4rem;
+
+    .slider{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: hsl(205, 90%, 88%);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      transition: all 0.25s ease-in-out;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .slider__number{
+        font-size: 80px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    .btn{
+      background: transparent;
+      border-color: transparent;
+      font-size: 1.75rem;
+      cursor: pointer;
+      margin: 0 0.25rem;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      color: hsl(210, 22%, 49%);
+      transition: .3s;
+    }
+  }
+}
